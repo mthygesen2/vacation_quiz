@@ -7,10 +7,19 @@ $(document).ready(function(){
     var money = $("input[name=money]:checked").val();
     var length = $("input[name=length]:checked").val();
 
+
     if(money === "small"){
       $(".country").text("Thailand, Cambodia or Laos");
     }else {
-      $(".country").text("Iceland, Maldives, Switzerland");
+      if (money === "issue"){
+        $(".country").text("Antartica, Dubai or Japan");
+      }else {
+        if (season === "summer" && travelingwith === "solo"){
+        $(".country").text("Iceland, Maldives or  Switzerland");
+      }else {
+        $(".country").text("Turkey, Kenya or Brazil")
+      }
+    }
     }
       event.preventDefault();
 
