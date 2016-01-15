@@ -3,8 +3,8 @@
   <head>
     <link rel="stylesheet" href="css/styles.css" media="all" type="text/css">
     <link rel="stylesheet" href="css/css/bootstrap.min.css" media="screen" type="text/css">
-    <script type="js/jquery-1.12.0.js"></script>
-    <script type="text/javascript"></script>
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Vacation Quiz</title>
   </head>
 
@@ -16,39 +16,45 @@
       </div>
 
 
-      <form class="travelform">
+      <form id="travelform">
         <h4>Who are you traveling with?</h4>
         <div class="row">
           <div class="col-md-3">
             <label for="solo">Solo</label>
-            <input type="radio" id="solo" name="traveling-with">
+            <input type="radio" id="solo" name="with">
           </div>
           <div class="col-md-3">
             <label for="couple">Couple</label>
-            <input type="radio" id="couple" name="traveling-with">
+            <input type="radio" id="couple" name="with">
           </div>
           <div class="col-md-3">
             <label for="family">Family</label>
-            <input type="radio" id="family" name="traveling-with">
+            <input type="radio" id="family" name="with">
           </div>
           <div class="col-md-3">
             <label for="friends">Friends</label>
-            <input type="radio" id="friends" name="traveling-with">
+            <input type="radio" id="friends" name="with">
           </div>
         </div>
-        <h4>What type of vacation do you want to take?</h4>
+        <!-- <h4>What type of vacation do you want to take?</h4>
         <div class="row">
           <div class="col-md-4">
-            <label for="relax">Relaxing</label>
-            <input type="radio" id="relax" name="vacation-type">
+            <label for="relax">
+              <input type="radio" id="relax" name="vacation-type" value="relax">
+              Relaxing
+            </label>
           </div>
           <div class="col-md-4">
-            <label for="adventure">Adventure</label>
-            <input type="radio" id="adventure" name="vacation-type">
+            <label for="adventure">
+              <input type="radio" id="adventure" name="vacation-type" value ="adventure">
+              Adventure
+            </label>
           </div>
           <div class="col-md-4">
-            <label for="mix">A mix of both</label>
-            <input type="radio" id="mix" name="vacation-type">
+            <label for="mix">
+              <input type="radio" id="mix" name="vacation-type" value="mix">
+              A mix of both
+            </label>
           </div>
         </div>
         <h4>When are you going to travel?</h4>
@@ -102,10 +108,19 @@
             <label for="month">3-4 weeks</label>
             <input type="radio" id="month" name="length">
           </div>
-        </div>
+        </div> -->
         <input type="submit" name="submit" value="See where are we going to take you!">
       </form>
-      <div class="answer">
+      <div id="countries">
+        <div id=iceland class ="pic">
+            <img src="img/iceland.jpg">
+            <p>ICELAND</p>
+          </div>
+          <div id=france class= "pic">
+            <img src="img/france.jpg">
+            <p>FRANCE</p>
+          </div>
+
       </div>
     </div>
   </body>

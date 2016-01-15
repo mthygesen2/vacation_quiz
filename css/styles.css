@@ -1,10 +1,10 @@
-.travelform {
+#travelform {
   border: 2px solid grey;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 .row{
-  width: 75%;
+  width: 85%;
   padding-left: 5%;
 }
 h4{
@@ -21,4 +21,7 @@ h4{
 
 label {
   margin-right: 15px;
+}
+#countries {
+  display: none;
 }
