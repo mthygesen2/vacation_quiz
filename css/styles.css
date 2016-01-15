@@ -11,12 +11,13 @@ h4{
   padding-left: 2%;
   font-weight: lighter;
 }
-.opening h2 {
-  color: green;
+.jumbotron{
+  background-color: yellow;
 }
-.opening p {
+.jumbotron p {
   text-align: center;
   font-size: 20px;
+
 }
 
 label {
@@ -26,6 +27,7 @@ label {
   text-align: center;
   margin: 5%;
   font-size: 30px;
+
 }
 #submit {
   margin-left: 5%;

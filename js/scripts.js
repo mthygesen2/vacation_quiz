@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $("form").submit(function(event){
-
+    $(".country").children("div").hide();
     var travelingwith = $('input[name="with"]:checked').val();
     var relax = $("input[name=vacation-type]:checked").val();
     var season = $("input[name=season]:checked").val();
@@ -8,8 +8,9 @@ $(document).ready(function(){
     var length = $("input[name=length]:checked").val();
 
 
-    if(money === "small"){
-      $(".country").text("Thailand, Cambodia or Laos");
+    if(money === "small") {
+      if(relax === "adventure") {
+        $(".country").text("Thailand, Cambodia or Laos");
     }else {
       if (money === "issue"){
         $(".country").text("Antartica, Dubai or Japan");
@@ -21,6 +22,7 @@ $(document).ready(function(){
       }
     }
     }
+  }
       event.preventDefault();
 
     });
