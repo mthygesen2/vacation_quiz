@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $("form").submit(function(event){
-    $(".country").children("div").hide();
+
     var travelingwith = $('input[name="with"]:checked').val();
     var relax = $("input[name=vacation-type]:checked").val();
     var season = $("input[name=season]:checked").val();
@@ -14,15 +14,16 @@ $(document).ready(function(){
     }else {
       if (money === "issue"){
         $(".country").text("Antartica, Dubai or Japan");
-      }else {
-        if (season === "summer" && travelingwith === "solo"){
-        $(".country").text("Iceland, Maldives or  Switzerland");
-      }else {
-        $(".country").text("Turkey, Kenya or Brazil")
-      }
-    }
-    }
-  }
+        }else {
+          if (season === "summer" && travelingwith === "solo"){
+            $(".country").text("Iceland, Maldives or  Switzerland");
+            }else {
+              $(".country").text("Turkey, Kenya or Brazil");
+            }
+          }
+        }
+      } else
+        $(".country").text("A staycation?");
       event.preventDefault();
 
     });
