@@ -1,5 +1,22 @@
+.travelform {
+  border: 2px solid grey;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.row{
+  width: 75%;
+  padding-left: 5%;
+}
+h4{
+  padding-left: 2%;
+  font-weight: lighter;
+}
 .opening h2 {
   color: green;
+}
+.opening p {
+  text-align: center;
+  font-size: 20px;
 }
 
 label {
