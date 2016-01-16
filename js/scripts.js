@@ -7,24 +7,39 @@
       var money = $("input[name=money]:checked").val();
       var length = $("input[name=length]:checked").val();
   
-  
+  /*
       if(money === "small") {
         if(relax === "adventure") {
           $(".country").text("Thailand, Cambodia or Laos");
         } else {
-          if (money === "issue"){
-            $(".country").text("Antartica, Dubai or Japan");
+          if (season === "summer" || travelingwith === "solo"){
+            $(".country").text("Iceland, Maldives or Switzerland");
           } else {
-            if (season === "summer" || travelingwith === "solo"){
-              $(".country").text("Iceland, Maldives or Switzerland");
-            } else {
-              $(".country").text("Turkey, Kenya or Brazil");
-            }
+            $(".country").text("Turkey, Kenya or Brazil");
           }
         }
-      } else {
+      } else if (money === "issue"){
+            $(".country").text("Antartica, Dubai or Japan");
+      } else { // money === large or medium
         $(".country").text("A staycation?");
       }
+      */
+      if(money === "small") {
+        $(".country").text("A staycation");
+      } else if (money === "large" || money === "medium") {
+        if(relax === "adventure") {
+          $(".country").text("Thailand, Cambodia or Laos");
+        } else { // relax === relax || relax === mix
+          if (season === "summer" || travelingwith === "solo"){
+            $(".country").text("Iceland, Maldives or Switzerland");
+          } else {
+            $(".country").text("Turkey, Kenya or Brazil");
+          }
+        }
+      } else { // money === not an issue
+        $(".country").text("Antartica, Dubai or Japan");
+      }
+      
       
       event.preventDefault();
   
